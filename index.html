@@ -4,38 +4,64 @@
     <meta charset="utf-8">
     <title>The Quizzical Quiz 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="quizbasic.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="less.js" type="text/javascript"></script>
 
     </head>
     <body>
 
-    <button type="button" id="start" class="btn-lg btn-primary">Click to Start the Quiz</button>
+      <div class="nav">
+        <div class="div">
+        <h1>My Quiz App</h1>
+        </div>
+      </div>
 
-    <button type="button" id="player1" class="btn-lg btn-primary">Click to get player 1's score</button>
-    <button type="button" id="player2" class="btn-lg btn-primary">Click to get player 2's score</button>
-    <button type="button" id="player3" class="btn-lg btn-primary">Click to get player 3's score</button>
-    <button type="button" id="player4" class="btn-lg btn-primary">Click to get player 4's score</button>
-    <button type="button" id="player5" class="btn-lg btn-primary">Click to get player 5's score</button>
-    <button type="button" id="player6" class="btn-lg btn-primary">Click to get player 6's score</button>
-    <button type="button" id="player7" class="btn-lg btn-primary">Click to get player 7's score</button>
+      <div class="step">
+        <div class="one">
+          <h2>Step One: Create a quiz. (Case sensative, 10q's + a's)</h2>
+          <button type="button" id="createQuiz" class="create">Create Quiz!</button>
+        </div>
+        <div class="two">
+          <h2>Step Two: Save that quiz.</h2>
+          <form onsubmit="download(this['name'].value)">
+            <input type="submit" class="save" value="Save!">
+          </form>
+        </div>
+        <div class="three">
+          <h2>Step Three: Choose a quiz.</h2>
+          <label for="chooseQuiz" size="1em" class="choose">Choose!</label>
+          <input type="file" id="chooseQuiz" class="choose2" value="Choose!">
+        </div>
+        <div class="four">
+          <h2>Step Four: Submit the quiz.</h2>
+          <button id="submit" class="submit">Submit!</button>
+        </div>
+        <div class="five">
+          <h2>Step Five: Enjoy!.</h2>
+          <button type="button" id="start" class="s1">Play!</button>
+        </div>
+      </div>
 
-    <button type="button" id="createQuiz" class="btn-lg btn-primary">Click to create a new quiz!</button>
+
+      <div class="players">
+        <button type="button" id="player1" class="p1">Click to get player 1's score</button>
+        <button type="button" id="player2" class="p2">Click to get player 2's score</button>
+        <button type="button" id="player3" class="p3">Click to get player 3's score</button>
+        <button type="button" id="player4" class="p4">Click to get player 4's score</button>
+        <button type="button" id="player5" class="p5">Click to get player 5's score</button>
+        <button type="button" id="player6" class="p6">Click to get player 6's score</button>
+        <button type="button" id="player7" class="p7">Click to get player 7's score</button>
+      </div>
 
 
-      <label for="chooseQuiz" class = "btn-lg btn-primary">Click to choose a quiz!</label>
-      <input type="file" id="chooseQuiz" class="btn-sm-danger">
-      <button id="submit">Click to submit quiz!</button>
 
 
-    <form onsubmit="download(this['name'].value)">
-      <input type="submit" value="Click to save the quiz!">
-    </form>
+
+
+
+
+
 
     <script src="quizbasic.js"></script>
     </body>

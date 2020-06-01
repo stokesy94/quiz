@@ -1,0 +1,150 @@
+@margin: 0;
+@padding: 0;
+
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: @padding;
+  background-color: black;
+}
+
+.nav{
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #2F2FA2;
+}
+.div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%;);
+    height: 90%;
+    width: 40%;
+    background-color: #99738E;
+    box-shadow: 5px 10px 50px 5px black;
+    border-radius: 10px;
+
+    h1 {
+      font-family: cursive;
+      font-style: oblique;
+    }
+  }
+.step{
+  position: relative;
+  height: 50%;
+  margin: 0 5% 0 5%;
+  display: flex;
+  align-items:center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .one {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    border: 5px solid black;
+    box-shadow: 0px 5px 10px 2.5px grey;
+    border-radius: 20px;
+    background-color: #99738E;
+    flex: 1 1 0px;
+    h2 {
+      padding: 10px 10px 0 10px;
+    }
+    .create {
+      background-color: #F64C72;
+      border-color: blue;
+      color: white;
+      font-weight: bolder;
+      font-size: 1em;
+      height: 100px;
+      width: 150px;
+      border-radius: 20px;
+      box-shadow: 4px 4px 1px 0px darkblue;
+    }
+  }
+  .one:hover{
+    transform: translate(1%,-1%);
+    background-color: white;
+    box-shadow: 0px 10px 20px 5px yellow;
+  }
+
+  .two {
+    .step.one();
+    .save {
+      .step.one.create();
+    }
+  }
+  .two:hover{
+    transform: translate(1%,-1%);
+    background-color: white;
+    box-shadow: 0px 10px 20px 5px yellow;
+  }
+  .three {
+    .step.one();
+    .choose {
+      .step.one.create();
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .choose2{
+      display: none;
+    }
+  }
+  .three:hover{
+    transform: translate(1%,-1%);
+    background-color: white;
+    box-shadow: 0px 10px 20px 5px yellow;
+  }
+  .four {
+    .step.one();
+    .submit {
+      .step.one.create();
+    }
+  }
+  .four:hover{
+    transform: translate(1%,-1%);
+    background-color: white;
+    box-shadow: 0px 10px 20px 5px yellow;
+  }
+  .five {
+    .step.one();
+      .s1{
+        .step.one.create();
+    }
+  }
+  .five:hover{
+    transform: translate(1%,-1%);
+    background-color: white;
+    box-shadow: 0px 10px 20px 5px yellow;
+  }
+}
+.players{
+  position: relative;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .p1,.p2,.p3,.p4,.p5,.p6,.p7{
+    .step.one.create();
+    color: black;
+    background-color:#F64C72;
+  }
+}
+.p1:hover,.p2:hover,.p3:hover,.p4:hover,.p5:hover,.p6:hover,.p7:hover{
+  background-color: white;
+}
