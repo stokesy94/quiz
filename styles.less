@@ -7,7 +7,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: @padding;
-  background-color: black;
+  background-color: #26007F;
 }
 
 .nav{
@@ -18,7 +18,7 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: #2F2FA2;
+  background-color: #7E55DE;
 }
 .div {
     position: absolute;
@@ -30,7 +30,7 @@ body {
     transform: translate(-50%;);
     height: 90%;
     width: 40%;
-    background-color: #99738E;
+    background-color: #9C81DB;
     box-shadow: 5px 10px 50px 5px black;
     border-radius: 10px;
 
@@ -46,7 +46,10 @@ body {
   display: flex;
   align-items:center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  margin-left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
 
   .one {
     margin-top: 100px;
@@ -57,15 +60,14 @@ body {
     justify-content: space-around;
     height: 100%;
     border: 5px solid black;
-    box-shadow: 0px 5px 10px 2.5px grey;
     border-radius: 20px;
-    background-color: #99738E;
-    flex: 1 1 0px;
+    background-color: #CAC2DE;
+    flex-grow: 1;
     h2 {
       padding: 10px 10px 0 10px;
     }
     .create {
-      background-color: #F64C72;
+      background-color: #B5B5B5;
       border-color: blue;
       color: white;
       font-weight: bolder;
@@ -79,7 +81,7 @@ body {
   .one:hover{
     transform: translate(1%,-1%);
     background-color: white;
-    box-shadow: 0px 10px 20px 5px yellow;
+    box-shadow: 0px 10px 20px 5px #E4E0EC;
   }
 
   .two {
@@ -91,7 +93,18 @@ body {
   .two:hover{
     transform: translate(1%,-1%);
     background-color: white;
-    box-shadow: 0px 10px 20px 5px yellow;
+    box-shadow: 0px 10px 20px 5px #E4E0EC;
+  }
+  .twofive{
+    .step.one();
+    .numofplayers {
+      .step.one.create();
+    }
+  }
+  .twofive:hover{
+    transform: translate(1%,-1%);
+    background-color: white;
+    box-shadow: 0px 10px 20px 5px #E4E0EC;
   }
   .three {
     .step.one();
@@ -108,7 +121,7 @@ body {
   .three:hover{
     transform: translate(1%,-1%);
     background-color: white;
-    box-shadow: 0px 10px 20px 5px yellow;
+    box-shadow: 0px 10px 20px 5px #E4E0EC;
   }
   .four {
     .step.one();
@@ -119,7 +132,7 @@ body {
   .four:hover{
     transform: translate(1%,-1%);
     background-color: white;
-    box-shadow: 0px 10px 20px 5px yellow;
+    box-shadow: 0px 10px 20px 5px #E4E0EC;
   }
   .five {
     .step.one();
@@ -130,7 +143,7 @@ body {
   .five:hover{
     transform: translate(1%,-1%);
     background-color: white;
-    box-shadow: 0px 10px 20px 5px yellow;
+    box-shadow: 0px 10px 20px 5px #E4E0EC;
   }
 }
 .players{
@@ -138,12 +151,10 @@ body {
   top: 15%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  .p1,.p2,.p3,.p4,.p5,.p6,.p7{
-    .step.one.create();
-    color: black;
-    background-color:#F64C72;
-  }
+  justify-content: center;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
 }
 .p1:hover,.p2:hover,.p3:hover,.p4:hover,.p5:hover,.p6:hover,.p7:hover{
   background-color: white;
